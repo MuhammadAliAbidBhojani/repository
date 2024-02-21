@@ -9,7 +9,7 @@ dict = {"Gender":['Men', 'Women', 'Other'],
 df = pd.DataFrame(dict)
 
 fig, ax = plt.subplots()
-ax.bar(height=dict['Count'], x=dict['Gender'])
+ax.barh(width=dict['Count'], y=dict['Gender'])
 ax.set_xlabel('Gender')
 ax.set_ylabel('Count')
 
